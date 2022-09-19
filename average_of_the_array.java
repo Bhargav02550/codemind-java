@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class sum
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int[] a=new int[n];
+        float avg;
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        int c=0;
+        for(int i=0;i<n;i++)
+        {
+            c+=a[i];
+        }
+        avg=(float)c/n;
+        System.out.format("%.2f",avg);
+    }
+}
