@@ -1,0 +1,43 @@
+import java.util.*;
+class solution
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        while(n-->0)
+        {
+            int a=s.nextInt();
+            int b=s.nextInt();
+            int[] a1=new int[a];
+            int[] b1=new int[b];
+            for(int i=0;i<a;i++)
+            {
+                a1[i]=s.nextInt();
+            }
+            for(int i=0;i<b;i++)
+            {
+                b1[i]=s.nextInt();
+            }
+            int length = a1.length + b1.length; 
+            int[] mergedArray = new int[length]; 
+            int pos=0;
+            for (int element :a1)
+            {  
+                mergedArray[pos] = element;  
+                pos++;
+            }  
+            for (int element :b1)
+            {  
+                mergedArray[pos] = element;  
+                pos++;  
+            }  
+            Arrays.sort(mergedArray);
+            for(int i=0;i<length;i++)
+            {
+                System.out.format(" %d",mergedArray[i]);
+            }
+            System.out.format("\n");
+        }
+    }
+}
