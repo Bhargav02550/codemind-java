@@ -7,11 +7,23 @@ class solution
         int n=s.nextInt();
         for(int i=n;i>=1;i--)
         {
-            for(int j=1;j<=i;j++)
+            for(int j=1;j<i;j++)
             {
-                System.out.print((char)(i+64)+" ");
+                System.out.printf(" ");
             }
-            System.out.println("");
+            for(int k=1;k<=n;k++)
+            {
+                if(i==1 || i==n || k==1 ||k==n)
+                {
+                    System.out.printf("*");
+                }
+                else
+                {
+                    System.out.printf(" ");
+                }
+            }
+            System.out.printf("
+");
         }
     }
 }
