@@ -1,24 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
 class solution
 {
     public static void main(String args[])
     {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
-        for(int i=0;i<n;i++)
+        for(int i=n;i>=1;i--)
         {
-            for(int j=0;j<n;j++)
+            for(int j=1;j<=n;j++)
             {
-                if(i==j)
+                if(j<=i)
                 {
-                    System.out.format("0");
-                }
-                else
-                {
-                    System.out.format("x");
+                    System.out.format("%d",j);
                 }
             }
-            System.out.println();
+            System.out.format("
+");
         }
     }
 }
