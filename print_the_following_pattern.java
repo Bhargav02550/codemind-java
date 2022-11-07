@@ -5,24 +5,20 @@ class solution
     {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
-        for(int i=n;i>=1;i--)
+        for(int i=0;i<n;i++)
         {
-            for(int j=1;j<i;j++)
+            for(int j=0;j<n;j++)
             {
-                System.out.printf(" ");
-            }
-            for(int k=1;k<=n;k++)
-            {
-                if(i==1 || i==n || k==1 ||k==n)
+                if((i==j)||(j==(n-1)-i))
                 {
-                    System.out.printf("*");
+                    System.out.format("x");
                 }
                 else
                 {
-                    System.out.printf(" ");
+                    System.out.format("0");
                 }
             }
-            System.out.printf("
+            System.out.format("
 ");
         }
     }
