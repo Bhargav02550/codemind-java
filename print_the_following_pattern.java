@@ -5,18 +5,17 @@ class solution
     {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
-        for(int i=1;i<=n;i++)
+        for (int i = 1; i <= n; i++)
         {
-            for(int j=1;j<=n-2;j++)
+            for (int j = n - i; j >= 1; j--)
             {
-                System.out.format("%d",j);
+                System.out.print(" ");
             }
-            for(int k=n-3;k>=1;k--)
+            for (int j = 1; j <= 2 * i - 1; j++)
             {
-                System.out.format("%d",k);
+                System.out.print(i);
             }
-            System.out.format("
-");
+            System.out.println();
         }
     }
 }
